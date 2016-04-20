@@ -37,3 +37,6 @@ Disallow: /cgi-bin/
 User-agent: *
 Disallow: /wp-admin/
 Disallow: /wp-includes/
+
+User-agent: *
+Disallow: /art-kleiner-archive/PhJ6sPq8kpmZiTZepZ/

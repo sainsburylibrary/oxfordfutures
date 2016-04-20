@@ -93,6 +93,35 @@ var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, pleas
 			.rtl td.recentcommentstexttop {
 				padding: 0px 10px 0px 0px;
 			}
+			
+form label {  
+font-weight: bold;
+float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	width: 100px;
+	border: none;
+}
+
+form input, form textarea {  
+margin-bottom: 1em;
+display:block;
+width: 25em;
+}
+
+form textarea {
+	width: 50em;
+}
+
+textarea:focus, input:focus {
+	border: 2px solid #1772AA;
+}
+
+form input#agreesubmit {
+display:block;
+margin: 0 auto;
+}
+			
 		</style>
 		<meta name="application-name" content="Oxford Futures Library" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Egrove Park, Executive Education Centre, Saïd Business School" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://oxfordfutures.sbs.ox.ac.uk/feed/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="Pierre Wack Memorial&nbsp;Library | Oxford Futures Library on WordPress.com" />
 <meta name="description" content="Pierre Wack (1922 - 1997) Of all those involved in the genesis and birth of scenario thinking, no contribution was more significant than that of pioneering Shell executive Pierre Wack. One of the key leaders of the development of corporate scenario planning in Shell&#039;s renowned Group Planning department, Wack&#039;s work helped to alert the company&#039;s&hellip;" />
@@ -192,7 +221,29 @@ body.custom-background { background-color: #1772aa; }
 I understand that abiding by the above terms of use is a pre-condition of my consultation of the collections of the Oxford Futures Library.
 </p>
 
-<p style="text-align: center;"><strong><a href="index.html" class="menu-item">Disagree</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="agreed/" class="menu-item">Agree</a></strong></p>
+<form method="post" action="acknowledge.php">
+
+  <label for="fullname">Name:</label>
+  <input type="text" name="fullname" id="fullname">
+
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email">
+  
+  <label for="organisation">Organisation:</label>
+  <input type="text" name="organisation" id="organisation">
+  
+  <label for="position">Position:</label>
+  <input type="text" name="position" id="position">
+
+
+  <label for="reason">Reason for access:</label>
+  <textarea name="reason" id="reason"></textarea>
+
+
+  <input type="submit" name="send" id="agreesubmit" value="Agree to terms and submit">
+
+</form>
 
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
