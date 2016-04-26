@@ -139,6 +139,14 @@ margin: 0 auto;
 			background-repeat: no-repeat;
 			height: 153px;
 		}
+
+:required {
+    content: ' *';
+}
+
+form label:after{
+  content: ' *';
+}
 		</style>
 	<style type="text/css" id="custom-background-css">
 body.custom-background { background-color: #1772aa; }
@@ -224,21 +232,21 @@ I understand that abiding by the above terms of use is a pre-condition of my con
 <form method="post" action="acknowledge.php">
 
   <label for="fullname">Name:</label>
-  <input type="text" name="fullname" id="fullname">
+  <input type="text" name="fullname" id="fullname" required>
 
 
   <label for="email">Email:</label>
-  <input type="email" name="email" id="email">
+  <input type="email" name="email" id="email" required>
   
   <label for="organisation">Organisation:</label>
-  <input type="text" name="organisation" id="organisation">
+  <input type="text" name="organisation" id="organisation" required>
   
   <label for="position">Position:</label>
-  <input type="text" name="position" id="position">
+  <input type="text" name="position" id="position" required>
 
 
   <label for="research">Purpose of research:</label>
-  <textarea name="research" id="research"></textarea>
+  <textarea name="research" id="research" required></textarea>
 
 
   <input type="submit" name="send" id="agreesubmit" value="Agree to terms and submit">
