@@ -1,9 +1,23 @@
 <!DOCTYPE html>
+<?php
+if (isset($_POST['send'])) {
+     $to = 'Christopher Jones <christopher.jones@sbs.ox.ac.uk>,John Pilbeam <john.pilbeam@sbs.ox.ac.uk>'; // Use your own email address
+     $subject = 'Art Kleiner Archive Request';
+     $message = 'Name: ' . $_POST['fullname'] . "\r\n\r\n";
+     $message .= 'Email: ' . $_POST['email'] . "\r\n\r\n";
+     $message .= 'Organisation: ' . $_POST['organisation'] . "\r\n\r\n";
+     $message .= 'Position: ' . $_POST['position'] . "\r\n\r\n";
+     $message .= 'Purpose of research: ' . $_POST['research'];
+     $headers = "From: " . $_POST['email'] . "\r\n";
+     $headers .= 'Content-Type: text/plain; charset=utf-8';
+     $success = mail($to, $subject, $message, $headers, '‑john.pilbeam@sbs.ox.ac.uk');
+}
+?>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Pierre Wack Memorial Library | Oxford Futures Library</title>
+<title>Art Kleiner Archive | Oxford Futures Library</title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="../xmlrpc.php" />
 <!--[if lt IE 9]>
@@ -139,13 +153,13 @@ body.custom-background { background-color: #1772aa; }
 </ul>
 </li>
 <li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-116"><a href="../use-of-the-library/index.html">Use of the library</a></li>
-<li id="menu-item-206" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-205 current_page_item menu-item-has-children menu-item-206"><a href="index.html">Pierre Wack Memorial Library</a>
+<li id="menu-item-206" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-205 menu-item-has-children menu-item-206"><a href="../pierre-wack-memorial-library/index.html">Pierre Wack Memorial Library</a>
 <ul class="sub-menu">
-	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="books/index.html">Books</a></li>
-	<li id="menu-item-211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-211"><a href="books-title/index.html">Books (alphabetical by title)</a></li>
-	<li id="menu-item-213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="journals-documents/index.html">Journals and Documents</a></li>
-	<li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="archive/index.html">Archive</a></li>
-	<li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218"><a href="video/index.html">Video</a></li>
+	<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="../pierre-wack-memorial-library/books/index.html">Books</a></li>
+	<li id="menu-item-211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-211"><a href="../pierre-wack-memorial-library/books-title/index.html">Books (alphabetical by title)</a></li>
+	<li id="menu-item-213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="../pierre-wack-memorial-library/journals-documents/index.html">Journals and Documents</a></li>
+	<li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="../pierre-wack-memorial-library/archive/index.html">Archive</a></li>
+	<li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218"><a href="../../pierre-wack-memorial-library/video/index.html">Video</a></li>	
 </ul>
 </li>
 <li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-197"><a href="../boucher-futures-research-library/index.html">Boucher Futures Research Library</a>
@@ -161,7 +175,7 @@ body.custom-background { background-color: #1772aa; }
 	<li id="menu-item-306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306"><a href="../boucher-futures-research-library/addendum/index.html">Addendum</a></li>
 </ul>
 </li>
-<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-230 menu-item-has-children menu-item-230"><a href="../art-kleiner-archive/index.html">Art Kleiner Archive</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-205 current_page_item menu-item-has-children menu-item-206"><a href="index.html">Art Kleiner Archive</a></li>
 <li id="menu-item-125" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a href="../contact-us/index.html">Contact us</a></li>
 <li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="../help/index.html">Help</a></li>
 </ul></div>					</nav><!-- #site-navigation -->
@@ -176,16 +190,19 @@ body.custom-background { background-color: #1772aa; }
 				
 <article id="post-205" class="post-205 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Pierre Wack Memorial&nbsp;Library</h1>
+		<h1 class="entry-title">Art Kleiner Archive</h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<h3 style="margin-top:0;">Pierre Wack (1922 - 1997)</h3>
-<p>Of all those involved in the genesis and birth of scenario thinking, no contribution was more significant than that of pioneering Shell executive Pierre Wack.</p>
-<p>One of the key leaders of the development of corporate scenario planning in Shell&#8217;s renowned Group Planning department, Wack&#8217;s work helped to alert the company&#8217;s managing directors to possible reasons for what became the oil price shocks of the 1970s.</p>
-<p>Valuing insight as much as foresight, Wack&#8217;s approach coupled rigorous analysis and iterative process with a transformative imperative, enabling fresh perceptions of what he called the ‘macrocosmic’ context of companies to penetrate and reshape the managerial mindset’s ‘microcosm’.</p>
-<p>A stint as a senior lecturer at Harvard Business School followed Wack&#8217;s retirement from Shell in 1982, leading to other work such as his involvement in the development of the &#8216;High Road&#8217;/&#8216;Low Road&#8217; scenarios for South Africa&#8217;s post-apartheid future. A spiritual and intellectual man, Wack&#8217;s legacy is reflected in the flourishing academic discipline and established corporate strategy process that scenario planning is today.</p>
-<p>The Pierre Wack Memorial Library was founded by Pierre&#8217;s friend and colleague Napier Collyns and was first located at the Global Business Network offices in The Hague. Incorporating Pierre&#8217;s books, papers and handwritten notes, the collection was donated to Green Templeton College in 2005 and is now housed in the Oxford Futures Library at Egrove Park.</p>
+
+<?php if (isset($success) && $success) { ?>
+<p>Thank you for agreeing to the terms and submitting your details.</p>
+<p>You may now <strong><a href="PhJ6sPq8kpmZiTZepZ/" class="menu-item">download the Art Kleiner Archive Catalogue</a></strong>.</p>
+<?php } else { ?>
+<h1>Error</h1>
+Sorry, there was a problem. Please return to the previous page.
+<?php } ?>
+
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 
