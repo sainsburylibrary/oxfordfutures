@@ -93,9 +93,9 @@
      * the trick: an element's clientHeight is in CSS pixels, while you can
      * set its line-height in system pixels using font-size and
      * -webkit-text-size-adjust:none.
-     * device-pixel-ratio: http://www.webkit.org/blog/55/high-dpi-web-sites/
+     * device-pixel-ratio: https://www.webkit.org/blog/55/high-dpi-web-sites/
      *
-     * Previous trick (used before http://trac.webkit.org/changeset/100847):
+     * Previous trick (used before https://trac.webkit.org/changeset/100847):
      * documentElement.scrollWidth is in CSS pixels, while
      * document.width was in system pixels. Note that this is the
      * layout width of the document, which is slightly different from viewport

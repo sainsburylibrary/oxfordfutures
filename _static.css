@@ -848,9 +848,9 @@ i.mce-i-bold, i.mce-i-italic, i.mce-i-bullist, i.mce-i-numlist, i.mce-i-blockquo
 	width: 98% !important;
 }/*
 Theme Name: Expound
-Theme URI: http://wordpress.org/themes/expound
+Theme URI: https://wordpress.org/themes/expound
 Author: Konstantin Kovshenin
-Author URI: http://kovshenin.com
+Author URI: https://kovshenin.com
 Description: An awesome magazine theme for your news site. Responsive layout, post thumbnails support, featured posts and more.
 Version: 1.6-wpcom
 License: GNU General Public License
@@ -860,12 +860,12 @@ Tags: black, blue, bright, white, light, one-column, two-columns, right-sidebar,
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Expound is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+Expound is based on Underscores https://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
 Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
+Eric Meyer https://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal https://necolas.github.com/normalize.css/
+and Blueprint https://www.blueprintcss.org/
 */
 
 
@@ -891,7 +891,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 html {
-	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units https://clagnut.com/blog/348/#c790 */
 	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
 	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */

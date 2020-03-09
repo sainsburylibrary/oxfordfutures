@@ -37,6 +37,10 @@ ehthumbs.db
 Thumbs.db
 
 # Directories #
+<<<<<<< HEAD
 art-kleiner-archive/
 art-kleiner-archive/akak.php
 art-kleiner-archive/PhJ6sPq8kpmZiTZepZ/
+=======
+art-kleiner-archive/
+>>>>>>> a9c33b9c10958cdc6624583ae40ef94345445af0

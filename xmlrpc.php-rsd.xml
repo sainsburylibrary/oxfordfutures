@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+<?xml version="1.0" encoding="UTF-8"?><rsd version="1.0" xmlns="https://archipelago.phrasewise.com/rsd">
   <service>
     <engineName>WordPress</engineName>
-    <engineLink>http://wordpress.org/</engineLink>
-    <homePageLink>http://oxfordfutures.sbs.ox.ac.uk</homePageLink>
+    <engineLink>https://wordpress.org/</engineLink>
+    <homePageLink>https://oxfordfutures.sbs.ox.ac.uk</homePageLink>
     <apis>
       <api name="WordPress" blogID="1" preferred="true" apiLink="https://oxfordfutures.sbs.ox.ac.uk/xmlrpc.php" />
       <api name="Movable Type" blogID="1" preferred="false" apiLink="https://oxfordfutures.sbs.ox.ac.uk/xmlrpc.php" />
